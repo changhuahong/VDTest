@@ -17,19 +17,22 @@ Replace `[my-app-name]` with the desired directory name for your new application
 
 That's it! Now go build something cool.
 
+---
 
 # Sample Code for VD Coding Test
 
-MySQL schema dump available at /vd_test.sql
+##### Default database schema included:
+MySQL dump available at `/vd_test.sql`
 
-/dbconfig.php configuration file is required but NOT under version control
+##### Default db config file included:
+`/src/dbconfig.php` configuration file is required but NOT under version control
 
-Sample structure of dfconfig.php is as follows:
+Sample structure of `/src/dbconfig.php` is as follows:
 
-<?php
-return [
-    'host'   => '127.0.0.1',
-    'user'   => 'root',
-    'pass'   => '',
-    'schema' => 'vd_test'
-];
+    <?php
+    return [
+        'host'   => '127.0.0.1',
+        'user'   => 'root',
+        'pass'   => '',
+        'schema' => 'vd_test'
+    ];
