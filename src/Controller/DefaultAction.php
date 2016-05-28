@@ -55,7 +55,9 @@ class DefaultAction {
     function insertObject($request, $response, $args) {
         $now = time();
         $result = 'invalid request';
-        $data = $request->getParsedBody()['JSON'];
+
+        //$data = $request->getParsedBody()['JSON'];
+        $data = array_values($request->getParsedBody())[0];
 
         // Sample log message
         //$this->logger->info("POST object '/object' route");
