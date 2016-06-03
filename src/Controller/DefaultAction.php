@@ -30,7 +30,7 @@ class DefaultAction {
             die('Invalid request');
         }
 
-        $output = '';
+        $output = 'key not found';
 
         if (isset($_GET['timestamp'])) {
             $timestamp = $_GET['timestamp'];
